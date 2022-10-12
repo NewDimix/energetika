@@ -1,0 +1,95 @@
+.reviews-content
+    font-size 20px
+    padding-top 20px
+    padding-bottom 25px
+    background-color white
+
+    @media (min-width 480px)
+        padding-top 35px
+        padding-bottom 35px
+
+    @media (min-width 768px)
+        padding-top 55px
+        padding-bottom 55px
+
+    @media (min-width 992px)
+        padding-top 70px
+        padding-bottom 70px
+
+    @media (min-width 1400px)
+        padding-top 95px
+        padding-bottom 95px
+
+    .item, .carousel, .carousel-inner
+        overflow hidden
+        width 100%
+
+    .carousel
+        margin-bottom 15px
+
+        @media (min-width 480px)
+            padding-bottom 22px
+
+        @media (min-width 768px)
+            padding-bottom 30px
+
+        @media (min-width 992px)
+            padding-bottom 35px
+
+        @media (min-width 1400px)
+            padding-bottom 40px
+
+    .carousel-control
+        background-image none
+        text-shadow none
+        color #b2b2b2
+        opacity 1
+
+    .glyphicon-chevron-right, .glyphicon-chevron-left
+        top 350px
+
+        @media (min-width 992px)
+            top 55%
+
+    .glyphicon-chevron-right
+        right 20px
+
+        @media (min-width 1700px)
+            right 50%
+
+    .glyphicon-chevron-left
+        left 20px
+
+        @media (min-width 1700px)
+            left 50%
+
+    &__link-wrap
+        text-align center
+
+        @media (min-width 992px)
+            text-align right
+            padding-right 50px
+
+        @media (min-width 1400px)
+            padding-right 100px
+
+    &__link
+        font-size-func(25)
+        color black
+        text-decoration underline
+        font-style oblique
+
+        @media (min-width 480px)
+            font-size-func(27)
+
+        @media (min-width 768px)
+            font-size-func(30)
+
+        @media (min-width 992px)
+            font-size-func(33)
+
+        @media (min-width 1400px)
+            font-size-func(36)
+
+        &:hover
+            color black

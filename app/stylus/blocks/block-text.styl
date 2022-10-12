@@ -1,0 +1,31 @@
+.block-text
+    background-color rgba(0, 0, 0, 0.5)
+    padding 0.625em 0.78125em
+    font-size-func(20)
+    text-transform uppercase
+    color white
+    text-align center
+    transition all .1s ease
+    hyphens()
+
+    &_link
+        {ibt}
+
+        &:hover
+            text-decoration none
+            color white
+            background-color rgba(0, 0, 0, 0.4)
+
+        &:focus
+            text-decoration none
+            color white
+
+
+    @media (min-width 768px)
+        font-size-func(24)
+
+    @media (min-width 992px)
+        font-size-func(28)
+
+    @media (min-width 1400px)
+        font-size-func(32)

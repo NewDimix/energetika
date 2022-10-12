@@ -1,0 +1,108 @@
+.news-content
+    background-color white
+    text-align center
+    padding-top 2em
+    padding-bottom 3em
+    font-size-func(16)
+
+    @media (min-width 480px)
+        font-size-func(18)
+        padding-top 2.5em
+        padding-bottom 3.5em
+
+    @media (min-width 768px)
+        font-size-func(20)
+        padding-top 3.6em
+        padding-bottom 4.2em
+
+    @media (min-width 992px)
+        font-size-func(23)
+
+    @media (min-width 1400px)
+        font-size-func(25)
+
+    &__items-wrap
+        margin-bottom 2.5em
+
+        @media (min-width 768px)
+            margin-bottom 4em
+
+    &__item
+        text-align left
+
+    &__title
+        font-size 1.12em
+        text-transform uppercase
+        margin-top 0
+        margin-bottom .8em
+
+    &__img
+        position relative
+        margin-bottom 1em
+        overflow hidden
+        max-height 300px
+
+        @supports (object-fit: cover)
+            height 300px
+
+        img
+            display block
+            width 100%
+
+            @supports (object-fit: cover)
+                height 300px
+                object-fit cover
+
+    &__date
+        position absolute
+        top 5px
+        left 10px
+        color white
+        font-family Calibri
+
+    &__descr
+        font-weight 300
+        margin-bottom 1.2em
+
+    &__read
+        padding .2em 1.8em
+        text-transform none
+        font-size 1.12em
+
+    &__link
+        font-weight 700
+        font-family Calibri
+        padding .4em 1em
+        font-size 1.5em
+
+        @media (min-width 480px)
+            font-size 1.8em
+
+        @media (min-width 768px)
+            font-size 2.16em
+
+        @media (min-width 992px)
+            font-size 2.16em
+
+        @media (min-width 1400px)
+            font-size 2.16em
+
+    .row
+        margin-bottom 2.5em
+
+        &:last-child
+            margin-bottom 0
+
+    .col-sm-6
+        margin-bottom 2.5em
+
+        @media (min-width 768px)
+            &:last-child, &:nth-last-child(2)
+                margin-bottom 0
+
+        @media (min-width 1400px)
+            margin-bottom 0
+
+        &:last-child
+            margin-bottom 0
+

@@ -1,0 +1,22 @@
+.top-text
+    text-transform uppercase
+    font-size-func(18)
+    line-height 1.2
+    hyphens()
+    max-width 900px
+    margin-left auto
+    margin-right auto
+    text-align center
+
+    @media (min-width 768px)
+        font-size-func(45/2.68)
+
+    @media (min-width 992px)
+        font-size-func(60/2.68)
+
+    @media (min-width 1400px)
+        font-size-func(28)
+
+    h1
+        @extend .top-text
+        margin-top 0

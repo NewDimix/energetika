@@ -1,0 +1,66 @@
+.energo
+    position relative
+    text-transform uppercase
+    font-weight 300
+    padding-top 30px
+    padding-bottom 55px
+    background-image url(../img/energo-bg.jpg)
+    background-size cover
+    background-position center bottom
+
+    @media (min-width 768px)
+        padding-top 40px
+        padding-bottom 70px
+
+    &:before
+        @media (min-width 768px)
+            content ''
+            width (537/1.5)px
+            height (767/1.5)px
+            background-image url(../img/energo-man.png)
+            background-position center
+            background-size contain
+            background-repeat no-repeat
+            position absolute
+            left 0
+            bottom 0
+            transform translateX(-32.5%)
+
+        @media (min-width 992px)
+            width (537/1.2)px
+            height (767/1.2)px
+            transform translateX(-30%)
+
+        @media (min-width 1400px)
+            width (537)px
+            height (767)px
+            transform translateX(-20%)
+
+        @media (min-width 1600px)
+            transform translateX(-10%)
+
+        @media (min-width 1750px)
+            transform translateX(0)
+
+    &__title
+        margin-top 0
+        margin-bottom .6em
+        font-size-func(30)
+        hyphens()
+
+        @media (min-width 768px)
+            font-size-func(45)
+
+        @media (min-width 992px)
+            font-size-func(60)
+
+        @media (min-width 1400px)
+            font-size-func(75)
+
+    &__text
+        margin-bottom 1.4em
+
+    &__list
+        a
+            text-decoration none
+            color black

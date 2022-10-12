@@ -1,0 +1,112 @@
+.navbar
+    background-color $grey-medium-color
+    margin-bottom 0
+    border none
+    border-radius 0
+
+    @media (min-width 768px)
+        padding-top 0
+        padding-bottom 0
+        min-height 100px
+
+    @media (min-width 992px)
+        min-height 73px
+
+    &-header
+        @media (min-width 768px)
+            float none
+            margin-top 5px
+
+        @media (min-width 992px)
+            float left
+
+    &-brand
+        height auto
+        padding 0
+        margin-left 15px
+
+        @media (min-width 768px)
+            display block
+            text-align center
+            float none
+
+        img
+            {ibt}
+
+
+    &-toggle
+        margin-top 13px
+        margin-bottom 0
+
+    &-nav
+        font-size 0
+        white-space nowrap
+
+        @media (min-width 768px)
+            float none
+            text-align center
+
+        li
+            font-size-func(18)
+
+            @media (min-width 768px)
+                font-size-func(15)
+                float none
+                {ibt}
+
+            @media (min-width 992px)
+                font-size-func(17)
+
+            @media (min-width 1400px)
+                font-size-func(19)
+
+            &:not(:last-child)
+                @media (min-width 768px)
+                    margin-right 30px
+
+                @media (min-width 992px)
+                    margin-right 25px
+
+                @media (min-width 1400px)
+                    margin-right 60px
+
+            &.active
+                > a
+                    background-color inherit !important
+                    color white !important
+
+                    @media (min-width 768px)
+                        border-bottom 3px solid white !important
+
+            a
+                padding-right 0
+
+                @media (min-width 768px)
+                    padding-left 0
+                    padding-top 3px
+                    padding-bottom 12px
+                    border-bottom 3px solid transparent
+
+                @media (min-width 992px)
+                    padding-top 30px
+                    padding-bottom 23px
+
+                &:focus
+                    outline-color $grey-light-color
+
+                &:hover
+                    @media (min-width 768px)
+                        border-bottom 3px solid rgba(255, 255, 255, 0.5)
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+    background-color $grey-medium-color
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text
+    color white
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+    color white
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand
+    @media (min-width 768px)
+        margin-left 0

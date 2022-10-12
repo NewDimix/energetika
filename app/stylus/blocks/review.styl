@@ -1,0 +1,110 @@
+.review
+    color black
+
+    &__author
+        text-align center
+        font-size-func(30)
+        margin-bottom 12px
+
+        @media (min-width 480px)
+            font-size-func(33)
+            margin-bottom 20px
+
+        @media (min-width 768px)
+            font-size-func(36)
+            margin-bottom 27px
+
+        @media (min-width 992px)
+            font-size-func(38)
+            margin-bottom 33px
+
+        @media (min-width 1400px)
+            font-size-func(40)
+            margin-bottom 38px
+
+        p
+            @media (min-width 992px)
+                {ibt}
+
+    &__photo
+        margin-top 0
+        text-align center
+        margin-bottom 20px
+
+        @media (min-width 992px)
+            margin-bottom 0
+
+        img
+            {ibt}
+
+    &__blockquote
+        position relative
+        font-size-func(16)
+        border-radius 25px
+        padding 13px 20px
+        box-shadow 0 0 15px 0 rgba(0, 0, 0, 0.3)
+        border-left none
+        margin-left 0px
+        margin-bottom 5px
+        text-align center
+
+        @media (min-width 480px)
+            font-size-func(18)
+
+        @media (min-width 768px)
+            font-size-func(20)
+
+        @media (min-width 992px)
+            font-size-func(23)
+            padding 25px 40px 25px 105px
+            min-height 200px
+            text-align left
+
+        @media (min-width 1400px)
+            font-size-func(25)
+            padding 35px 60px 35px 190px
+
+        &:before
+            content inline('arrow-quote2.png')
+            position absolute
+            top -105px
+            left 40%
+            filter drop-shadow(0 -8px 5px rgba(0, 0, 0, 0.2))
+
+            @media (min-width 992px)
+                content inline('arrow-quote.png')
+                right 100%
+                bottom inherit
+                left inherit
+                top 70px
+                filter drop-shadow(-8px 0 5px rgba(0, 0, 0, 0.2))
+
+        p
+            &:before, &:after
+                @media (min-width 992px)
+                    content ''
+                    position absolute
+                    top 50px
+                    width 23.5px
+                    height 49.5px
+                    background-image inline('quote.png')
+                    background-position center
+                    background-size cover
+
+                @media (min-width 1400px)
+                    width 47px
+                    height 99px
+
+            &:before
+                @media (min-width 992px)
+                    left 25px
+
+                @media (min-width 1400px)
+                    left 50px
+
+            &:after
+                @media (min-width 992px)
+                    left 55px
+
+                @media (min-width 1400px)
+                    left 100px

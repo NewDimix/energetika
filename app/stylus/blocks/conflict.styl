@@ -1,0 +1,124 @@
+.conflict
+    background-image url(../img/conflict-bg.jpg)
+    background-position center
+    background-size 200%
+    background-repeat no-repeat
+    padding-top 35px
+    padding-bottom 60px
+
+    @media (min-width 480px)
+        padding-top 45px
+        padding-bottom 80px
+
+    @media (min-width 768px)
+        padding-top 60px
+        padding-bottom 100px
+        background-size cover
+
+    @media (min-width 992px)
+        padding-top 80px
+        padding-bottom 125px
+
+    @media (min-width 1400px)
+        padding-top 110px
+        padding-bottom 165px
+
+    &__text
+        position relative
+        margin-top 0
+        border-top 1px solid $grey-medium-color
+        border-left 1px solid $grey-medium-color
+        padding-top 7.5px
+        padding-left 12.5px
+        text-align left
+        font-family Calibri
+        text-transform uppercase
+        font-size-func(20)
+        width 90%
+        margin-left 5%
+        font-weight 700
+        color $grey-medium-color
+
+        @media (min-width 480px)
+            font-size-func(30)
+
+        @media (min-width 768px)
+            font-size-func(40)
+            max-width 1000px
+            margin-left 0
+            margin-right 0
+
+        @media (min-width 992px)
+            font-size-func(55)
+
+        @media (min-width 1400px)
+            font-size-func(68)
+
+        &:before
+            content ''
+            width 20px
+            height 1px
+            background-color $grey-medium-color
+            position absolute
+            top -1px
+            right 100%
+
+            @media (min-width 480px)
+                width 25px
+
+        &:after
+            content ''
+            width 1px
+            height 15px
+            background-color $grey-medium-color
+            position absolute
+            left -1px
+            bottom 100%
+
+            @media (min-width 480px)
+                height 20px
+
+    &__subtext
+        font-size-func(20)
+        font-family Calibri
+        font-weight 400
+        text-transform uppercase
+        padding-left 12.5px
+        margin-bottom 1.06em
+        width 90%
+        margin-left auto
+        margin-right auto
+        color $grey-medium-color
+
+        @media (min-width 480px)
+            font-size-func(30)
+
+        @media (min-width 768px)
+            font-size-func(40)
+            max-width 1000px
+            margin-left 0
+            margin-right 0
+
+        @media (min-width 992px)
+            font-size-func(55)
+
+        @media (min-width 1400px)
+            font-size-func(68)
+
+    &__title
+        max-width 880px
+        text-align left
+        font-size-func(20)
+
+        @media (min-width 480px)
+            font-size-func(30)
+
+        @media (min-width 768px)
+            font-size-func(40)
+            width 70%
+
+        @media (min-width 992px)
+            font-size-func(55)
+
+        @media (min-width 1400px)
+            font-size-func(66)

@@ -1,0 +1,34 @@
+.list
+    font-weight 300
+    font-size-func(14)
+    padding-left 5%
+    padding-right 5%
+
+    @media (min-width 768px)
+        padding-left 0
+        padding-right 0
+        font-size-func(17/1.12)
+        list-style-position inside
+        -moz-column-count 2 /* Firefox */
+        -webkit-column-count 2 /* Safari and Chrome */
+        column-count 2
+        height auto
+
+    @media (min-width 992px)
+        font-size-func(22/1.12)
+
+    @media (min-width 1400px)
+        font-size-func(25)
+
+    ol
+        padding-left 0
+        list-style none
+        counter-reset item /* Обнуляем счетчик списка */
+
+        > li:before
+            content counter(item) '. ' /* Добавляем 1. */
+            counter-increment item /* Задаём имя счетчика */
+
+    ul
+        padding-left 25px
+        list-style-type disc

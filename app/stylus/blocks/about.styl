@@ -1,0 +1,111 @@
+.about
+    position relative
+    text-align center
+    background-image url(../img/about-bg.jpg)
+    background-size cover
+    background-position center
+    padding-top 30px
+    padding-bottom 170px
+    //min-height 100vh
+    //min-height calc(100vh - 213px - 60px)
+
+    @media (min-width 480px)
+        padding-top 40px
+        padding-bottom 180px
+
+    @media (min-width 768px)
+        padding-top 50px
+        padding-bottom 200px
+
+    @media (min-width 992px)
+        padding-top 60px
+        padding-bottom 240px
+
+    @media (min-width 1400px)
+        padding-top 75px
+        padding-bottom 280px
+
+    &__title
+        margin-top 0
+        margin-bottom .74em
+        font-size-func(30)
+        font-family Calibri
+        text-transform uppercase
+        hyphens()
+
+        @media (min-width 768px)
+            font-size-func(55)
+
+        @media (min-width 992px)
+            font-size-func(70)
+
+        @media (min-width 1400px)
+            font-size-func(87.5)
+
+    &__text
+        font-weight 300
+        font-size-func(20/1.2)
+        text-align left
+        text-indent 15px
+        max-width 1200px
+        margin-bottom 1.3em
+        hyphens()
+
+        @media (min-width 480px)
+            font-size-func(25/1.4)
+
+        @media (min-width 768px)
+            font-size-func(30/1.4)
+
+        @media (min-width 992px)
+            font-size-func(35/1.4)
+
+        @media (min-width 1400px)
+            font-size-func(43/1.4)
+
+        &_big
+            text-indent 0
+            text-align center
+            font-size-func(20)
+            max-width 850px
+            margin-bottom 0.58em
+
+            @media (min-width 480px)
+                font-size-func(25)
+
+            @media (min-width 768px)
+                font-size-func(30)
+
+            @media (min-width 992px)
+                font-size-func(35)
+
+            @media (min-width 1400px)
+                font-size-func(43)
+
+            hr
+                width 65%
+                margin-bottom 0.81em
+                border-color black
+
+    img
+        position absolute
+        bottom 25px
+        left 50%
+        transform translateX(-50%)
+        width 80px
+
+        @media (min-width 480px)
+            bottom 30px
+            width 90px
+
+        @media (min-width 768px)
+            bottom 35px
+            width 100px
+
+        @media (min-width 992px)
+            bottom 40px
+            width 120px
+
+        @media (min-width 1400px)
+            bottom 45px
+            width 142px

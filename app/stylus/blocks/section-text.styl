@@ -1,0 +1,39 @@
+.section-text
+    text-align left
+    hyphens()
+    font-size-func(14)
+
+    @media (min-width 768px)
+        font-size-func(17)
+
+    @media (min-width 992px)
+        font-size-func(20)
+
+    @media (min-width 1400px)
+        font-size-func(25)
+
+    ol
+        list-style decimal
+        margin-bottom 1em
+        margin-top 0
+
+        &:last-child
+            margin-bottom 0
+
+        ul
+            margin-bottom 0
+
+    ul
+        list-style disc
+        margin-top 0
+
+        margin-bottom 1em
+
+        &:last-child
+            margin-bottom 0
+
+    h2
+        font-weight 700
+        font-size 1.2em
+        margin-top 1.2em
+        margin-bottom .65em

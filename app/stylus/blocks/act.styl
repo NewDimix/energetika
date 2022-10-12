@@ -1,0 +1,103 @@
+.act
+    text-align center
+    background-image url(../img/act-bg.jpg)
+    background-position center bottom
+    background-size cover
+    padding-top 35px
+    padding-bottom 60px
+
+    @media (min-width 768px)
+        padding-top 40px
+        padding-bottom 70px
+
+    @media (min-width 992px)
+        padding-top 45px
+        padding-bottom 80px
+
+    @media (min-width 1400px)
+        padding-top 55px
+        padding-bottom 100px
+
+    &__text
+        font-size-func(14)
+        hyphens()
+
+        @media (min-width 768px)
+            font-size-func(18)
+
+        @media (min-width 992px)
+            text-align right
+            font-size-func(20)
+
+        @media (min-width 1400px)
+            font-size-func(25)
+
+    &__list
+        text-align left
+        hyphens()
+
+        p
+            margin-bottom 1.4em
+            font-size-func(14)
+
+            @media (min-width 768px)
+                font-size-func(18)
+
+            @media (min-width 992px)
+                font-size-func(20)
+
+            @media (min-width 1400px)
+                font-size-func(25)
+
+        ul
+            padding-left 20px
+            margin-bottom 35px
+
+            @media (min-width 992px)
+                padding-left 0
+
+            li
+                font-size-func(14)
+
+                @media (min-width 768px)
+                    font-size-func(18)
+
+                @media (min-width 992px)
+                    font-size-func(20)
+
+                @media (min-width 1400px)
+                    font-size-func(25)
+
+                &:not(:last-child)
+                    margin-bottom 1.4em
+
+    .col-md-6
+        &:first-child
+            @media (max-width 992px)
+                margin-bottom 25px
+                padding-right 20px
+
+            @media (min-width 1400px)
+                padding-right 35px
+
+        &:last-child
+            @media (min-width 992px)
+                padding-left 20px
+
+            @media (min-width 1400px)
+                padding-left 35px
+
+    .row
+        margin-bottom 20px
+
+        @media (min-width 480px)
+            margin-bottom 30px
+
+        @media (min-width 768px)
+            margin-bottom 50px
+
+        @media (min-width 992px)
+            margin-bottom 70px
+
+        @media (min-width 1400px)
+            margin-bottom 100px

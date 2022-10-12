@@ -1,0 +1,29 @@
+.bottom-line
+    padding 7px 0px
+    font-family Calibri
+
+    p
+        margin-top 0
+        margin-bottom 0
+        hyphens()
+        color white
+        font-size-func(12)
+
+    a
+        color white
+        text-decoration none
+
+        &:hover
+            text-decoration underline
+
+    .col-sm-6
+        &:not(:last-child)
+            margin-bottom 5px
+
+            @media (min-width 1400px)
+                margin-bottom 0
+
+        &:nth-last-child(2)
+            @media (min-width 768px)
+                margin-bottom 0
+

@@ -1,0 +1,206 @@
+.events2
+    position relative
+    text-align center
+    background-color white
+    background-size 100%
+    background-repeat no-repeat
+    background-position center bottom
+    padding-top 30px
+    padding-bottom 170px
+
+    @media (min-width 480px)
+        padding-top 40px
+        padding-bottom 180px
+
+    @media (min-width 768px)
+        padding-top 50px
+        padding-bottom 200px
+
+    @media (min-width 992px)
+        padding-top 60px
+        padding-bottom 240px
+
+    @media (min-width 1400px)
+        padding-top 75px
+        padding-bottom 280px
+
+    &__title-wrap
+        {ibt}
+        position relative
+        margin-top 0
+        margin-bottom 30px
+        border-top 1px solid $grey-medium-color
+        border-left 1px solid $grey-medium-color
+        padding-top 7.5px
+        padding-left 12.5px
+        text-align left
+        max-width 1000px
+        width 90%
+        margin-left 5%
+        margin-right 5%
+
+        @media (min-width 480px)
+            padding-top 8px
+            padding-left 17.5px
+
+        @media (min-width 768px)
+            margin-bottom 50px
+
+        @media (min-width 992px)
+            padding-top 8px
+            padding-left 25px
+
+        &:before
+            content ''
+            width 20px
+            height 1px
+            background-color $grey-medium-color
+            position absolute
+            top -1px
+            right 100%
+
+            @media (min-width 480px)
+                width 25px
+
+        &:after
+            content ''
+            width 1px
+            height 15px
+            background-color $grey-medium-color
+            position absolute
+            left -1px
+            bottom 100%
+
+            @media (min-width 480px)
+                height 20px
+
+        a
+            display block
+            color $grey-medium-color
+            text-decoration none
+
+            &:focus
+                text-decoration none
+                outline-color $grey-light-color
+
+    &__title
+        display block
+        font-weight 400
+        hyphens()
+
+        &_large
+            font-family Calibri
+            text-transform uppercase
+            font-size-func(26)
+            margin-bottom 10px
+
+            @media (min-width 480px)
+                font-size-func(42)
+
+            @media (min-width 768px)
+                font-size-func(50)
+
+            @media (min-width 992px)
+                font-size-func(65)
+
+            @media (min-width 1400px)
+                font-size-func(88)
+
+        &_small
+            font-family HeliosCond
+            font-size-func(20)
+            text-transform lowercase
+            font-weight 300
+            line-height 1em
+
+            @media (min-width 480px)
+                font-size-func(42/1.63)
+
+            @media (min-width 768px)
+                font-size-func(50/1.63)
+
+            @media (min-width 992px)
+                font-size-func(65/1.63)
+
+            @media (min-width 1400px)
+                font-size-func(88/1.63)
+
+    &__subtitle
+        text-transform none
+        margin-bottom 1.8em
+        text-align left
+        font-weight 300
+        color $grey-medium-color
+        max-width 1000px
+        width 90%
+        font-size-func(42/2.31)
+
+        @media (min-width 768px)
+            font-size-func(50/2.31)
+
+        @media (min-width 992px)
+            font-size-func(65/2.31)
+
+        @media (min-width 1400px)
+            font-size-func(88/2.31)
+
+
+    &__list
+        list-style none
+        text-align left
+        hyphens()
+        margin-bottom 3em
+        padding-left 0
+        color $grey-medium-color
+        font-weight 300
+        font-size-func(16)
+
+        @media (min-width 480px)
+            font-size-func(18)
+
+        @media (min-width 768px)
+            font-size-func(20)
+
+        @media (min-width 992px)
+            font-size-func(25)
+
+        ol
+            padding-left 28px
+            padding-right 10 px
+
+        ul
+            padding-left 0
+            list-style disc
+
+    &__block-text
+        margin-top 10px
+        width 90%
+        margin-left auto
+        margin-right auto
+        text-align left
+        max-width 850px
+        margin-bottom 2em
+        font-weight 700
+
+    img
+        position absolute
+        bottom 25px
+        left 50%
+        transform translateX(-50%)
+        width 80px
+
+        @media (min-width 480px)
+            bottom 30px
+            width 90px
+
+        @media (min-width 768px)
+            bottom 35px
+            width 100px
+
+        @media (min-width 992px)
+            bottom 40px
+            width 120px
+
+        @media (min-width 1400px)
+            bottom 45px
+            width 142px
